@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>اتواصل معانا — رواد البيئة</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand"><span class="mark">🌿</span> رواد البيئة</div>
+    <div class="nav-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="about.html">اعرفنا</a>
+      <a href="learn.html">اتعلم الفرز</a>
+      <a href="contact.html" class="active">اتواصل معانا</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" style="padding:56px 0 30px">
+  <div class="container">
+    <span class="hero-eyebrow-leaf">📩</span>
+    <h1 style="font-size:clamp(2rem,4vw,2.8rem)">اتواصل معانا</h1>
+    <p class="tagline">عندك سؤال، اقتراح، أو حابب تنضم لمبادرة رواد البيئة؟ اكتب بياناتك وهنتواصل معاك في أقرب وقت.</p>
+  </div>
+</header>
+
+<div class="wave-divider" aria-hidden="true">
+  <svg viewBox="0 0 1200 70" preserveAspectRatio="none"><path d="M0,40 C300,90 900,0 1200,40 L1200,70 L0,70 Z" fill="#EEF4EA"/></svg>
+</div>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="form-card">
+      <form id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">الاسم بالكامل</label>
+          <input type="text" id="name" name="name" required placeholder="مثال: أحمد محمد">
+        </div>
+        <div class="form-row">
+          <label for="age">السن</label>
+          <input type="number" id="age" name="age" min="1" max="120" required placeholder="مثال: 25">
+        </div>
+        <div class="form-row">
+          <label for="address">العنوان بالتفصيل</label>
+          <textarea id="address" name="address" required placeholder="المحافظة، المدينة/المركز، الحي، الشارع، رقم العقار..."></textarea>
+        </div>
+        <div class="form-row">
+          <label for="message">رسالتك (اختياري)</label>
+          <textarea id="message" name="message" placeholder="اكتب سؤالك أو اقتراحك هنا..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center" id="submitBtn">إرسال</button>
+        <div class="form-msg" id="formMsg"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="brand">🌿 رواد البيئة</div>
+    <p>مبادرة بيئية تشجّع الفرز من المنبع وتنشر ثقافة الاستدامة في كل بيت.</p>
+  </div>
+</footer>
+
+<script src="js/contact.js"></script>
+</body>
+</html>

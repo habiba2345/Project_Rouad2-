@@ -1,0 +1,13 @@
+{
+  "name": "rowad-el-beea",
+  "version": "1.0.0",
+  "description": "موقع رواد البيئة - فرونت إند + باك إند بسيط لتخزين رسائل التواصل في ملف إكسل",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "exceljs": "^4.4.0"
+  }
+}
